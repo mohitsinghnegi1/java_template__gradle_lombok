@@ -1,0 +1,15 @@
+* Final keyword  inside method only ensures that the compiler will complain if the parameter variable is reassigned within the method. That's all
+
+S.O.L.I.D. principle
+*********************
+
+The Single-responsibility principle: "There should never be more than one reason for a class to change.
+ In other words, every class should have only one responsibility.[6]
+
+The Open–closed principle: "software entities ... should be open for extension, but closed for modification."
+
+The Liskov substitution principle: objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program.
+
+The Interface segregation principle: "many client-specific interfaces are better than one general-purpose interface."[9][4]
+
+The Dependency inversion principle: "depend upon abstractions, [not] concretions."[10][4]
