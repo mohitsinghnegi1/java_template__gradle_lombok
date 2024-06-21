@@ -1,3 +1,5 @@
+package extra;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.HashSet;
@@ -5,7 +7,7 @@ import java.util.Scanner;
 import java.util.Set;
 
 
-public class Driver {
+public class Driver1 {
 
     public static void main(String[] args) throws FileNotFoundException {
 
