@@ -25,17 +25,11 @@ public interface IPaymentGateway {
 
     Map<Bank, Integer> showDistribution(PaymentMode paymentMode);
 
-    TransactionStatus makePayment(String clientName, PaymentMode paymentMode, Map<String, String> details);
+    TransactionStatus makePayment(String clientName, PaymentMode paymentMode, Map<String, Object> details);
 
     Map<String, Client> getClients();
-
-    Map<PaymentMode, Map<Bank, Integer>> getBankDistribution();
 
     MachineCoding.interfaces.IBankDistributionStrategy getBankDistributionStrategy();
 
     String getName();
-
-    void setClients(Map<String, Client> clients);
-
-    void setBankDistribution(Map<PaymentMode, Map<Bank, Integer>> bankDistribution);
 }

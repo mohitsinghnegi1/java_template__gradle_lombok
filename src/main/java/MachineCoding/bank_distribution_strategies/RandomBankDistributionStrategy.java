@@ -9,8 +9,21 @@ import java.util.Random;
 
 public  class RandomBankDistributionStrategy implements IBankDistributionStrategy {
 
+    private static RandomBankDistributionStrategy INSTANCE;
+
+
+    private RandomBankDistributionStrategy(){}
+
+    public static synchronized RandomBankDistributionStrategy  getInstance(){
+        if (INSTANCE == null) {
+            INSTANCE = new RandomBankDistributionStrategy();
+        }
+        return INSTANCE;
+    }
+
+
     @Override
-    public Bank selectBank(Map<Bank, Integer> distribution) {
+    public Bank selectBank(Map<Bank, Integer> distribution, Object metadata) {
         int total = distribution.values().stream().mapToInt(Integer::intValue).sum();
         int random = new Random().nextInt(total);
 
