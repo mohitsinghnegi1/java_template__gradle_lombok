@@ -21,7 +21,7 @@ public interface IPaymentGateway {
 
     void removePaymode(String clientName, PaymentMode paymentMode);
 
-    void addBankDistribution(PaymentMode paymentMode, Bank bank, int percentage);
+    void addBankDistribution(PaymentMode paymentMode, Bank bank, int weight);
 
     Map<Bank, Integer> showDistribution(PaymentMode paymentMode);
 

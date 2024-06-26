@@ -19,6 +19,7 @@ public class Bank {
     @NonNull private String name;
 
     public TransactionStatus processPayment(PaymentMode paymentMode, Map<String, Object> details) {
+
         // Perform validation based on payment mode
         // Note: We can use factory pattern to fetch validators based on payment Mode
         // Note: We can use factory pattern to get the payment processor corresponding to provided payment mode to process the payment
